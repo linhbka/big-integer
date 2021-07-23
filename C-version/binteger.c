@@ -248,11 +248,11 @@ big_int add(big_int b1, big_int b2)
 
     if (compare(b1, b2) >= 0)
     {
-        big = clean_int(assign(b1));
-        small = clean_int(assign(b2));
+        big = (assign(b1));
+        small = (assign(b2));
     } else {
-        big = clean_int(assign(b2));
-        small = clean_int(assign(b1));
+        big = (assign(b2));
+        small = (assign(b1));
     }
     sum.sign = big.sign;
     max_len = big.bilen;
