@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include <math.h>
 
-#include "sub_lib.h"
+#include "binteger.h"
 
 int str_len(const char *str)
 {
@@ -53,7 +53,7 @@ big_int get_big()
     char temp[max_size];
     do
     {
-        gets(temp);
+        fgets(temp, 100, stdin);
     } while (!check_valid(temp));
     len = str_len(temp);
     strrev(temp);
